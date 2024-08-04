@@ -1,0 +1,16 @@
+<div class="card w-50  m-3 p-4">
+    <form class="row w-100" [formGroup]="form" (ngSubmit)="addTask()">
+        <mat-form-field class="col-7" appearance="outline">
+            <mat-label> Task Title</mat-label>
+            <input type="text" matInput formControlName="title">
+            <mat-error>Title Is REquired</mat-error>
+        </mat-form-field>
+        <mat-form-field class="col-7" appearance="outline">
+            <mat-label> Task Description</mat-label>
+            <input type="text" matInput formControlName="description">
+            <mat-error>Description Is REquired</mat-error>
+        </mat-form-field>
+        <p class="col-8"></p>
+        <button type="submit"  class="btn btn-danger col-3">Add Task</button>
+    </form>
+</div>
